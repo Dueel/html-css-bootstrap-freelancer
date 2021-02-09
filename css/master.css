@@ -1,4 +1,15 @@
-.container{
-  height: 200px;
-  background: red;
+/* DEBUG:  */
+
+[class*=col-]{
+  height: 100px;
+  background-color: rgba(0,255,0,0.3);
+}
+
+
+nav{
+  background-color: #2C3E50;
+}
+
+header{
+  background-color: #1ABC9C;
 }
