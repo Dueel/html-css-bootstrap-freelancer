@@ -3,6 +3,7 @@
 [class*=col-]{
   height: 100px;
   background-color: rgba(0,255,0,0.3);
+  border: 1px solid green;
 }
 
 
@@ -11,5 +12,9 @@ nav{
 }
 
 header{
+  background-color: #1ABC9C;
+}
+
+#about{
   background-color: #1ABC9C;
 }
