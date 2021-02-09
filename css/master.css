@@ -1,12 +1,21 @@
 /* DEBUG:  */
 
+body{
+  text-align: center;
+  line-height: 100px;
+}
+
 [class*=col-]{
-  height: 100px;
+  min-height: 100px;;
   background-color: rgba(0,255,0,0.3);
   border: 1px solid green;
 }
 
+.container, .row{
+  height: 100%;
+}
 
+/* STRUTTURA */
 nav{
   background-color: #2C3E50;
 }
