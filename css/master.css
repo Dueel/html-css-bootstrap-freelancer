@@ -2,17 +2,13 @@
 
 body{
   text-align: center;
-  line-height: 100px;
+  line-height: 100%;
 }
 
 [class*=col-]{
-  min-height: 100px;;
-  background-color: rgba(0,255,0,0.3);
+  /* min-height: 100px; */
+  background-color: white;
   border: 1px solid green;
-}
-
-.container, .row{
-  height: 100%;
 }
 
 /* STRUTTURA */
@@ -30,4 +26,27 @@ footer{
 
 #about{
   background-color: #1ABC9C;
+}
+
+/* DEBUG:  */
+
+.contained{
+  min-height: 50px;
+  padding: 15px 0;
+  margin: 15px 0;
+  background-color: lightgreen;
+}
+
+header .contained:not(nav .contained){
+  height: 300px;
+  margin: 30px 0;
+}
+
+#portfolio{
+  padding: 50px 0;
+}
+
+#portfolio .contained{
+  height: 200px;
+  margin: 15px 0;
 }
