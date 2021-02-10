@@ -1,14 +1,27 @@
 /* DEBUG:  */
 
-body{
-  text-align: center;
-  line-height: 100%;
-}
-
 [class*=col-]{
   /* min-height: 100px; */
-  background-color: white;
-  border: 1px solid green;
+  background-color: rgba(0,255,255,0.5);
+  /* border: 1px solid green; */
+}
+
+.contained{
+  /* height: 70px; */
+  /* padding: 15px 0; */
+  /* margin: 15px 0; */
+  /* background-color: lightgreen; */
+  position: relative;
+}
+
+header .contained:not(nav .contained){
+  height: 300px;
+  margin: 30px 0;
+}
+
+#portfolio .contained{
+  height: 200px;
+  margin: 15px 0;
 }
 
 /* STRUTTURA */
@@ -24,29 +37,34 @@ footer{
   background-color: #3A546D;
 }
 
-#about{
-  background-color: #1ABC9C;
-}
-
-/* DEBUG:  */
-
-.contained{
-  min-height: 50px;
-  padding: 15px 0;
-  margin: 15px 0;
-  background-color: lightgreen;
-}
-
-header .contained:not(nav .contained){
-  height: 300px;
-  margin: 30px 0;
-}
-
 #portfolio{
   padding: 50px 0;
 }
 
-#portfolio .contained{
-  height: 200px;
-  margin: 15px 0;
+#about{
+  background-color: #1ABC9C;
+}
+
+/* REGOLE SPECIFICHE */
+nav{
+  color: white;
+}
+
+nav .contained>a{
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+nav ul{
+  float: right;
+}
+
+nav ul li{
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-block;
+  margin-left: 20px;
 }
