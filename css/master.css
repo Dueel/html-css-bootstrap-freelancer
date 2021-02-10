@@ -1,40 +1,37 @@
 /* DEBUG:  */
 
-[class*=col-]{
-  /* min-height: 100px; */
-  background-color: rgba(0,255,255,0.5);
-  /* border: 1px solid green; */
-}
-
 .contained{
-  /* height: 70px; */
-  /* padding: 15px 0; */
-  /* margin: 15px 0; */
-  /* background-color: lightgreen; */
   position: relative;
 }
 
 header .contained:not(nav .contained){
-  height: 300px;
-  margin: 30px 0;
+  padding: 50px 0;
 }
 
 #portfolio .contained{
-  height: 200px;
   margin: 15px 0;
 }
 
 /* STRUTTURA */
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
 nav{
   background-color: #2C3E50;
 }
 
 header{
+  color: white;
   background-color: #1ABC9C;
 }
 
 footer{
   background-color: #3A546D;
+}
+
+h1, h2{
+  font-weight: 700;
 }
 
 #portfolio{
@@ -47,24 +44,57 @@ footer{
 
 /* REGOLE SPECIFICHE */
 nav{
-  color: white;
+  font-weight: 700;
+}
+
+nav .contained{
+  padding: 40px 0;
 }
 
 nav .contained>a{
   font-size: 25px;
-  font-weight: 600;
+  line-height: 25px;
   color: white;
-  display: inline-block;
-  margin: 10px 0;
 }
 
 nav ul{
   float: right;
+  line-height: 25px;
 }
 
 nav ul li{
   font-size: 15px;
-  font-weight: 600;
   display: inline-block;
   margin-left: 20px;
+}
+
+header img{
+  max-width: 250px;
+}
+
+header h1{
+  font-size: 50px;
+}
+
+.star{
+  margin: 20px 0;
+}
+
+.star hr{
+  width: 120px;
+  display: inline-block;
+  border-top: 5px solid white;
+  border-radius: 5px;
+  vertical-align: middle;
+
+}
+
+.fa-star{
+  font-size: 35px;
+  margin: 0 15px;
+  vertical-align: middle;
+}
+
+#portfolio img{
+  max-width: 100%;
 }
