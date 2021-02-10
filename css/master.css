@@ -17,7 +17,7 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
-nav{
+nav, #copyright{
   background-color: #2C3E50;
 }
 
@@ -27,14 +27,22 @@ header{
 }
 
 footer{
+  padding-top: 50px;
+  position: relative;
+  color: white;
   background-color: #3A546D;
 }
 
-h1, h2{
+h1, h2, h3{
   font-weight: 700;
 }
 
-#portfolio, #about{
+p{
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+#portfolio, #about, #contact-me,{
   padding: 50px 0;
 }
 
@@ -71,23 +79,30 @@ nav ul li{
 
 header img{
   max-width: 250px;
+  margin-bottom: 30px;
 }
 
 header h1{
   font-size: 50px;
 }
 
-.star{
-  margin: 20px 0;
+.star-white, .star-grey{
+  margin: 20px 0 30px;
 }
 
-.star hr{
+.star-white hr{
+  border-top: 4px solid white;
+}
+
+.star-grey hr{
+  border-top: 4px solid #2C3E50;
+}
+
+hr{
   width: 120px;
   display: inline-block;
-  border-top: 5px solid white;
-  border-radius: 5px;
+  border-radius: 4px;
   vertical-align: middle;
-
 }
 
 .fa-star{
@@ -102,10 +117,32 @@ header h1{
 
 #about button{
   padding: 20px 40px;
+  margin-top: 20px;
   background-color: #1ABC9C;
   border: 2px solid white;
   border-radius: 5px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+
+form input,
+form textarea{
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+#copyright{
+  margin-top: 50px;
+  position: relative;
+  bottom: 0;
+}
+
+#copyright .contained{
+  padding: 40px 0;
+  line-height: 25px;
 }
