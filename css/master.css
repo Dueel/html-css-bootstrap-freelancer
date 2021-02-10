@@ -34,11 +34,12 @@ h1, h2{
   font-weight: 700;
 }
 
-#portfolio{
+#portfolio, #about{
   padding: 50px 0;
 }
 
 #about{
+  color: white;
   background-color: #1ABC9C;
 }
 
@@ -97,4 +98,14 @@ header h1{
 
 #portfolio img{
   max-width: 100%;
+}
+
+#about button{
+  padding: 20px 40px;
+  background-color: #1ABC9C;
+  border: 2px solid white;
+  border-radius: 5px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
